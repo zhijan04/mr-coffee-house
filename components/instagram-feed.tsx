@@ -8,43 +8,43 @@ import { Instagram, Heart, MessageCircle } from "lucide-react";
 const posts = [
   {
     id: "ig1",
-    src: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=600",
-    alt: "Latte art butterfly en Mr. Coffee House",
+    src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600",
+    alt: "Espresso con latte art en taza artesanal",
     likes: "342",
     comments: "18",
   },
   {
     id: "ig2",
-    src: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=600",
-    alt: "Barista en acción preparando espresso",
+    src: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=600",
+    alt: "Brunch completo de temporada",
     likes: "521",
     comments: "27",
   },
   {
     id: "ig3",
-    src: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=600",
-    alt: "Café con latte art en taza artesanal",
+    src: "https://images.unsplash.com/photo-1572286258217-215cf8e2cd11?q=80&w=600",
+    alt: "Latte art rosetta perfecto",
     likes: "298",
     comments: "15",
   },
   {
     id: "ig4",
-    src: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=600",
-    alt: "Brunch de domingo completo",
+    src: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600",
+    alt: "Croissants artesanales recién horneados",
     likes: "687",
     comments: "43",
   },
   {
     id: "ig5",
-    src: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=600",
-    alt: "Pastelería artesanal del día",
+    src: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=600",
+    alt: "Espacio y ambiente de Mr. Coffee",
     likes: "412",
     comments: "31",
   },
   {
     id: "ig6",
-    src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=600",
-    alt: "Interior moderno de Mr. Coffee House",
+    src: "https://images.unsplash.com/photo-1470338745628-171cf53de3a8?q=80&w=600",
+    alt: "Orange coffee con hielo y naranja",
     likes: "578",
     comments: "36",
   },
@@ -76,7 +76,7 @@ export default function InstagramFeed() {
             <span className="h-px w-8 bg-caramel" />
           </div>
           <h2 className="font-playfair text-4xl md:text-5xl font-800 text-espresso dark:text-cream mb-4">
-            @mrcoffee.house
+            @mrcoffeevcp
           </h2>
           <p className="font-inter text-base text-espresso/55 dark:text-cream/50 max-w-md mx-auto">
             Seguinos para ver las novedades, especiales del día y los momentos más lindos de nuestro café.
@@ -88,7 +88,7 @@ export default function InstagramFeed() {
           {posts.map((post, i) => (
             <motion.a
               key={post.id}
-              href="https://www.instagram.com/mrcoffee.house"
+              href="https://www.instagram.com/mrcoffeevcp"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.95 }}
@@ -131,10 +131,10 @@ export default function InstagramFeed() {
           className="flex justify-center"
         >
           <a
-            href="https://www.instagram.com/mrcoffee.house"
+            href="https://www.instagram.com/mrcoffeevcp"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-br from-[#f09433] via-[#e6683c] via-[#dc2743] via-[#cc2366] to-[#bc1888] text-white font-inter font-600 text-base rounded-full hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-xl"
+            className="group inline-flex items-center gap-3 px-8 py-4 espresso-gradient text-cream font-inter font-600 text-base rounded-full hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-xl border border-caramel/20"
           >
             <Instagram className="w-5 h-5" strokeWidth={1.5} />
             Seguir en Instagram

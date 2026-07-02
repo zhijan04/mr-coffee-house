@@ -44,7 +44,7 @@ export default function Hero() {
       {/* Parallax background image */}
       <motion.div className="absolute inset-0 scale-110" style={{ y }}>
         <Image
-          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=2070"
+          src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=2070"
           alt="Barista realizando latte art en Mr. Coffee House, Villa Carlos Paz"
           fill
           priority
@@ -131,7 +131,7 @@ export default function Hero() {
               href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366]/90 hover:bg-[#25D366] text-white font-inter font-500 text-base rounded-full transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-espresso/90 hover:bg-espresso border border-caramel/30 text-white font-inter font-500 text-base rounded-full transition-all duration-300 hover:scale-105"
             >
               <MessageCircle className="w-4 h-4" strokeWidth={1.5} />
               WhatsApp

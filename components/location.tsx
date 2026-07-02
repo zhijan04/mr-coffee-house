@@ -141,7 +141,7 @@ export default function Location() {
                 href={getWhatsAppUrl("Hola, me gustaría hacer una reserva en Mr. Coffee House.")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#25D366] text-white font-inter font-600 text-sm rounded-full hover:bg-[#20BC5A] transition-colors shadow-lg"
+                className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 caramel-gradient text-charcoal font-inter font-600 text-sm rounded-full hover:opacity-90 transition-colors shadow-lg"
               >
                 <MessageCircle className="w-4 h-4" strokeWidth={1.5} />
                 Reservar por WhatsApp

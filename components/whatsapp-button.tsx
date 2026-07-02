@@ -20,7 +20,7 @@ export default function WhatsAppButton() {
         href={getWhatsAppUrl()}
         target="_blank"
         rel="noopener noreferrer"
-        className="group flex items-center gap-2 bg-[#25D366] hover:bg-[#20BC5A] text-white rounded-full shadow-2xl shadow-black/30 transition-all duration-300 hover:scale-110 overflow-hidden"
+        className="group flex items-center gap-2 bg-espresso hover:bg-coffee text-cream rounded-full shadow-2xl shadow-espresso/40 transition-all duration-300 hover:scale-110 overflow-hidden border border-caramel/30"
         aria-label="Contactar por WhatsApp"
       >
         {/* Expanded label on hover */}
@@ -33,7 +33,7 @@ export default function WhatsAppButton() {
       </a>
 
       {/* Pulse animation */}
-      <div className="absolute inset-0 rounded-full bg-[#25D366]/40 animate-ping pointer-events-none" />
+      <div className="absolute inset-0 rounded-full bg-caramel/30 animate-ping pointer-events-none" />
     </motion.div>
   );
 }

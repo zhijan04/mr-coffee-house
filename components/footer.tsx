@@ -43,7 +43,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.instagram.com/mrcoffee.house"
+                href="https://www.instagram.com/mrcoffeevcp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full border border-cream/15 flex items-center justify-center hover:border-caramel hover:text-caramel transition-colors duration-300"
@@ -64,7 +64,7 @@ export default function Footer() {
                 href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-cream/15 flex items-center justify-center hover:border-[#25D366] hover:text-[#25D366] transition-colors duration-300"
+                className="w-9 h-9 rounded-full border border-cream/15 flex items-center justify-center hover:border-caramel hover:text-caramel transition-colors duration-300"
                 aria-label="WhatsApp"
               >
                 <MessageCircle className="w-4 h-4" strokeWidth={1.5} />

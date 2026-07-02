@@ -54,7 +54,7 @@ export function generateLocalBusinessSchema() {
       worstRating: "1",
     },
     sameAs: [
-      "https://www.instagram.com/mrcoffee.house",
+      "https://www.instagram.com/mrcoffeevcp",
       "https://www.facebook.com/mrcoffeehouse",
     ],
     amenityFeature: [
