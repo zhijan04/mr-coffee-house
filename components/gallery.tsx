@@ -35,7 +35,7 @@ const images: {
 }[] = [
   {
     id: "g1",
-    src: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?q=80&w=800",
+    src: "https://images.unsplash.com/photo-1572286258217-215cf8e2cd11?q=80&w=800",
     alt: "Latte art rosetta en Mr. Coffee House",
     category: "latte-art",
     span: "tall",
@@ -49,14 +49,14 @@ const images: {
   },
   {
     id: "g3",
-    src: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=800",
+    src: "https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?q=80&w=800",
     alt: "Brunch completo con tostadas y café",
     category: "brunch",
     span: "wide",
   },
   {
     id: "g4",
-    src: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=800",
+    src: "https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=800",
     alt: "Croissants artesanales recién horneados",
     category: "pasteleria",
     span: "normal",
@@ -77,21 +77,21 @@ const images: {
   },
   {
     id: "g7",
-    src: "https://images.unsplash.com/photo-1471951884559-e6d56f1b6b41?q=80&w=800",
+    src: "https://images.unsplash.com/photo-1559622214-f8a9850965bb?q=80&w=800",
     alt: "Waffles con frutas y miel de specialty",
     category: "brunch",
     span: "tall",
   },
   {
     id: "g8",
-    src: "https://images.unsplash.com/photo-1532347231146-80afc9e3df2b?q=80&w=800",
+    src: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?q=80&w=800",
     alt: "Cheesecake de temporada",
     category: "pasteleria",
     span: "normal",
   },
   {
     id: "g9",
-    src: "https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=800",
+    src: "https://images.unsplash.com/photo-1445116572660-236099ec97a0?q=80&w=800",
     alt: "Espacio de trabajo en cafetería",
     category: "ambiente",
     span: "normal",
