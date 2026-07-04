@@ -19,11 +19,11 @@ const config: Config = {
     extend: {
       colors: {
         espresso: {
-          DEFAULT: "#262B0F",
+          DEFAULT: "#241A14",
           foreground: "#F3EFE1",
         },
         coffee: {
-          DEFAULT: "#3E4519",
+          DEFAULT: "#4A3423",
           foreground: "#F3EFE1",
         },
         mocha: {
@@ -40,7 +40,7 @@ const config: Config = {
           foreground: "#333A15",
         },
         charcoal: {
-          DEFAULT: "#1C2009",
+          DEFAULT: "#141210",
           foreground: "#F3EFE1",
         },
         border: "hsl(var(--border))",
@@ -80,6 +80,7 @@ const config: Config = {
       fontFamily: {
         playfair: ["var(--font-playfair)", "Georgia", "serif"],
         inter: ["var(--font-inter)", "system-ui", "sans-serif"],
+        poppins: ["var(--font-poppins)", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

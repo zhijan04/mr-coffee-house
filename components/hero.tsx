@@ -88,7 +88,7 @@ export default function Hero() {
           {/* Main heading */}
           <motion.h1
             variants={itemVariants}
-            className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-800 text-cream leading-[1.05] mb-6"
+            className="font-poppins text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-800 text-cream leading-[1.05] mb-6"
           >
             El café de{" "}
             <em className="not-italic text-caramel">especialidad</em>
