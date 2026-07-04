@@ -57,7 +57,7 @@ export default function InstagramFeed() {
   return (
     <section
       ref={ref}
-      className="section-padding bg-cream dark:bg-espresso overflow-hidden"
+      className="section-padding bg-cream dark:bg-mocha overflow-hidden"
       aria-label="Instagram de Mr. Coffee House"
     >
       <div className="container-wide">

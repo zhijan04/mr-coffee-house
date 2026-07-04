@@ -30,9 +30,9 @@ export default function Footer() {
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block mb-4" aria-label="Mr. Coffee House">
               <img
-                src="/images/logo.png"
+                src="/images/logo-cream.png"
                 alt="Mr. Coffee - Cafetería de Especialidad"
-                className="h-10 w-auto rounded-lg"
+                className="h-8 w-auto"
               />
             </Link>
             <p className="font-inter text-sm text-cream/55 leading-relaxed max-w-xs mb-6">

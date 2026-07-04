@@ -20,7 +20,7 @@
     --popover: 40 33% 97%;
     --popover-foreground: 20 28% 18%;
 
-    --primary: 70 47% 22%;
+    --primary: 70 50% 17%;
     --primary-foreground: 40 33% 97%;
 
     --secondary: 30 30% 35%;
@@ -42,16 +42,17 @@
     --radius: 0.75rem;
 
     /* Brand tokens */
-    --espresso: #333A15;
-    --coffee: #4A531E;
+    --espresso: #262B0F;
+    --coffee: #3E4519;
     --caramel: #C98B4A;
     --cream: #F3EFE1;
     --white: #FFFFFF;
     --charcoal: #1C2009;
+  --mocha: #3B2A22;
   }
 
   .dark {
-    --background: 72 45% 8%;
+    --background: 72 48% 6%;
     --foreground: 55 30% 93%;
 
     --card: 72 40% 11%;
@@ -137,8 +138,12 @@
     background: linear-gradient(135deg, #C98B4A 0%, #E8A86A 100%);
   }
 
+  .mocha-gradient {
+    background: linear-gradient(160deg, #241A14 0%, #4A3423 100%);
+  }
+
   .espresso-gradient {
-    background: linear-gradient(160deg, #2A3011 0%, #4A531E 100%);
+    background: linear-gradient(160deg, #1C2009 0%, #3E4519 100%);
   }
 
   .section-padding {

@@ -97,7 +97,7 @@ function MenuCard({ item, index }: { item: MenuItem; index: number }) {
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: (index % 6) * 0.06 }}
-      className="group relative p-6 rounded-2xl bg-cream dark:bg-espresso/40 border border-espresso/8 dark:border-cream/8 hover:border-caramel/30 transition-all duration-300 hover:shadow-xl hover:shadow-caramel/5 hover:-translate-y-0.5"
+      className="group relative p-6 rounded-2xl bg-cream dark:bg-mocha/40 border border-espresso/8 dark:border-cream/8 hover:border-caramel/30 transition-all duration-300 hover:shadow-xl hover:shadow-caramel/5 hover:-translate-y-0.5"
     >
       <div className="flex items-start justify-between gap-3 mb-3">
         <h3 className="font-playfair text-lg font-600 text-espresso dark:text-cream group-hover:text-caramel transition-colors duration-300 leading-snug">

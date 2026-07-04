@@ -80,7 +80,7 @@ export default function MenuSection() {
   return (
     <section
       ref={ref}
-      className="section-padding bg-espresso dark:bg-charcoal overflow-hidden"
+      className="section-padding mocha-gradient overflow-hidden"
       aria-label="Vista previa del menú"
     >
       <div className="container-wide">
@@ -126,7 +126,7 @@ export default function MenuSection() {
                 delay: i * 0.07,
                 ease: "easeOut",
               }}
-              className="group relative p-6 rounded-2xl bg-coffee/40 hover:bg-coffee/60 border border-cream/5 hover:border-caramel/30 transition-all duration-300 cursor-default"
+              className="group relative p-6 rounded-2xl bg-mocha-light/30 hover:bg-mocha-light/50 border border-cream/5 hover:border-caramel/30 transition-all duration-300 cursor-default"
             >
               <span className="block font-inter text-xs font-500 text-caramel/70 tracking-wider uppercase mb-3">
                 {item.category}

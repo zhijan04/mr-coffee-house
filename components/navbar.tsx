@@ -66,9 +66,9 @@ export default function Navbar() {
             aria-label="Mr. Coffee House - Inicio"
           >
             <img
-              src="/images/logo.png"
+              src="/images/logo-cream.png"
               alt="Mr. Coffee - Cafetería de Especialidad"
-              className="h-9 md:h-10 w-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
+              className="h-6 md:h-7 w-auto group-hover:scale-105 transition-transform duration-300"
             />
           </Link>
 

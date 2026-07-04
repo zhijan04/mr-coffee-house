@@ -19,11 +19,16 @@ const config: Config = {
     extend: {
       colors: {
         espresso: {
-          DEFAULT: "#333A15",
+          DEFAULT: "#262B0F",
           foreground: "#F3EFE1",
         },
         coffee: {
-          DEFAULT: "#4A531E",
+          DEFAULT: "#3E4519",
+          foreground: "#F3EFE1",
+        },
+        mocha: {
+          DEFAULT: "#3B2A22",
+          light: "#5A3E2B",
           foreground: "#F3EFE1",
         },
         caramel: {

@@ -148,7 +148,7 @@ export default function Testimonials() {
                 key={t.id}
                 className="embla__slide w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] flex-shrink-0"
               >
-                <div className="h-full p-7 rounded-2xl bg-cream dark:bg-espresso/40 border border-espresso/8 dark:border-cream/8 flex flex-col gap-5">
+                <div className="h-full p-7 rounded-2xl bg-cream dark:bg-mocha/40 border border-espresso/8 dark:border-cream/8 flex flex-col gap-5">
                   <Quote
                     className="w-8 h-8 text-caramel/30"
                     strokeWidth={1}
