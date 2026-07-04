@@ -21,17 +21,24 @@ export default function ThemeToggle({
     setMounted(true);
   }, []);
 
+  const color =
+    variant === "light"
+      ? "text-cream/80 hover:text-caramel"
+      : "text-espresso/70 hover:text-caramel dark:text-cream/70";
+
   if (!mounted) {
     return (
       <button
         className={cn(
-          "relative w-16 h-8 rounded-full opacity-30",
-          variant === "light" ? "bg-white/10" : "bg-espresso/10",
+          "w-9 h-9 flex items-center justify-center opacity-30",
+          color,
           className
         )}
         aria-label="Cambiar tema"
         disabled
-      />
+      >
+        <span className="w-4 h-4 rounded-full border-2 border-current" />
+      </button>
     );
   }
 
@@ -41,143 +48,83 @@ export default function ThemeToggle({
     <button
       onClick={() => setTheme(isDark ? "light" : "dark")}
       className={cn(
-        "relative w-16 h-8 rounded-full p-1 transition-colors duration-500 overflow-hidden group",
-        isDark
-          ? "bg-charcoal border border-caramel/30"
-          : "bg-gradient-to-r from-sky-300 to-amber-200 border border-amber-300/50",
+        "relative w-9 h-9 flex items-center justify-center transition-colors duration-300 group",
+        color,
         className
       )}
       aria-label={isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro"}
     >
-      {/* Background scenery */}
-      <AnimatePresence>
+      <AnimatePresence mode="wait" initial={false}>
         {isDark ? (
-          /* Stars at night */
-          <motion.div
-            key="stars"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="absolute inset-0 pointer-events-none"
+          /* Moon — crescent drawn with SVG, rotates in */
+          <motion.svg
+            key="moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            className="w-5 h-5"
+            initial={{ rotate: 90, scale: 0.5, opacity: 0 }}
+            animate={{ rotate: 0, scale: 1, opacity: 1 }}
+            exit={{ rotate: -90, scale: 0.5, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "backOut" }}
           >
-            {[
-              { top: "20%", left: "15%", size: 2, delay: 0 },
-              { top: "55%", left: "28%", size: 1.5, delay: 0.5 },
-              { top: "30%", left: "42%", size: 2, delay: 1 },
-              { top: "65%", left: "12%", size: 1.5, delay: 1.5 },
-            ].map((star, i) => (
-              <motion.span
-                key={i}
-                className="absolute rounded-full bg-cream"
-                style={{
-                  top: star.top,
-                  left: star.left,
-                  width: star.size,
-                  height: star.size,
-                }}
-                animate={{ opacity: [0.2, 1, 0.2], scale: [0.8, 1.2, 0.8] }}
-                transition={{
-                  repeat: Infinity,
-                  duration: 2,
-                  delay: star.delay,
-                  ease: "easeInOut",
-                }}
-              />
-            ))}
-          </motion.div>
-        ) : (
-          /* Clouds during day */
-          <motion.div
-            key="clouds"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="absolute inset-0 pointer-events-none"
-          >
-            <motion.span
-              className="absolute top-[25%] w-4 h-1.5 rounded-full bg-white/70"
-              animate={{ x: [2, 26, 2] }}
-              transition={{ repeat: Infinity, duration: 7, ease: "easeInOut" }}
+            <motion.path
+              d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+              stroke="currentColor"
+              strokeWidth="1.6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
             />
+          </motion.svg>
+        ) : (
+          /* Sun — core scales in, rays rotate slowly forever */
+          <motion.div
+            key="sun"
+            className="relative w-5 h-5 flex items-center justify-center"
+            initial={{ rotate: -90, scale: 0.5, opacity: 0 }}
+            animate={{ rotate: 0, scale: 1, opacity: 1 }}
+            exit={{ rotate: 90, scale: 0.5, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "backOut" }}
+          >
+            {/* Rotating rays */}
+            <motion.svg
+              viewBox="0 0 24 24"
+              fill="none"
+              className="absolute inset-0 w-5 h-5"
+              animate={{ rotate: 360 }}
+              transition={{ repeat: Infinity, duration: 16, ease: "linear" }}
+            >
+              {Array.from({ length: 8 }).map((_, i) => {
+                const angle = (i * 45 * Math.PI) / 180;
+                const x1 = 12 + Math.cos(angle) * 8.2;
+                const y1 = 12 + Math.sin(angle) * 8.2;
+                const x2 = 12 + Math.cos(angle) * 10.5;
+                const y2 = 12 + Math.sin(angle) * 10.5;
+                return (
+                  <line
+                    key={i}
+                    x1={x1}
+                    y1={y1}
+                    x2={x2}
+                    y2={y2}
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                    strokeLinecap="round"
+                  />
+                );
+              })}
+            </motion.svg>
+            {/* Core */}
             <motion.span
-              className="absolute top-[58%] w-3 h-1 rounded-full bg-white/50"
-              animate={{ x: [20, 4, 20] }}
-              transition={{ repeat: Infinity, duration: 9, ease: "easeInOut" }}
+              className="w-2.5 h-2.5 rounded-full border-[1.6px] border-current"
+              animate={{ scale: [1, 1.12, 1] }}
+              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
             />
           </motion.div>
         )}
       </AnimatePresence>
-
-      {/* Sliding knob: sun <-> moon */}
-      <motion.div
-        layout
-        transition={{ type: "spring", stiffness: 500, damping: 30 }}
-        className={cn(
-          "relative w-6 h-6 rounded-full flex items-center justify-center shadow-lg",
-          isDark ? "ml-auto" : "ml-0"
-        )}
-      >
-        <AnimatePresence mode="wait">
-          {isDark ? (
-            /* Moon with crater details */
-            <motion.div
-              key="moon"
-              initial={{ rotate: -120, scale: 0.4, opacity: 0 }}
-              animate={{ rotate: 0, scale: 1, opacity: 1 }}
-              exit={{ rotate: 120, scale: 0.4, opacity: 0 }}
-              transition={{ duration: 0.45, ease: "backOut" }}
-              className="relative w-6 h-6 rounded-full bg-gradient-to-br from-cream to-caramel/70"
-            >
-              <span className="absolute top-1 left-1.5 w-1.5 h-1.5 rounded-full bg-espresso/15" />
-              <span className="absolute bottom-1.5 right-1 w-1 h-1 rounded-full bg-espresso/12" />
-              <span className="absolute top-3 right-2 w-0.5 h-0.5 rounded-full bg-espresso/15" />
-            </motion.div>
-          ) : (
-            /* Sun with rotating rays */
-            <motion.div
-              key="sun"
-              initial={{ rotate: 120, scale: 0.4, opacity: 0 }}
-              animate={{ rotate: 0, scale: 1, opacity: 1 }}
-              exit={{ rotate: -120, scale: 0.4, opacity: 0 }}
-              transition={{ duration: 0.45, ease: "backOut" }}
-              className="relative w-6 h-6 flex items-center justify-center"
-            >
-              {/* Rotating rays */}
-              <motion.div
-                className="absolute inset-0"
-                animate={{ rotate: 360 }}
-                transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
-              >
-                {Array.from({ length: 8 }).map((_, i) => (
-                  <span
-                    key={i}
-                    className="absolute top-1/2 left-1/2 w-0.5 h-1.5 bg-amber-500 rounded-full origin-center"
-                    style={{
-                      transform: `translate(-50%, -50%) rotate(${i * 45}deg) translateY(-9px)`,
-                    }}
-                  />
-                ))}
-              </motion.div>
-              {/* Sun core */}
-              <motion.span
-                className="w-4 h-4 rounded-full bg-gradient-to-br from-amber-300 to-amber-500 shadow-md shadow-amber-400/50"
-                animate={{ scale: [1, 1.1, 1] }}
-                transition={{ repeat: Infinity, duration: 2.5, ease: "easeInOut" }}
-              />
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </motion.div>
-
-      {/* Subtle hover glow */}
-      <span
-        className={cn(
-          "absolute inset-0 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none",
-          isDark
-            ? "shadow-[inset_0_0_12px_rgba(201,139,74,0.3)]"
-            : "shadow-[inset_0_0_12px_rgba(251,191,36,0.4)]"
-        )}
-      />
     </button>
   );
 }
