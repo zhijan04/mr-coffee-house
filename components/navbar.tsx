@@ -152,7 +152,7 @@ export default function Navbar() {
                       href={link.href}
                       onClick={() => setMobileOpen(false)}
                       className={cn(
-                        "block py-4 font-playfair text-3xl font-600 border-b border-white/10 transition-colors",
+                        "block py-4 font-poppins text-3xl font-700 border-b border-white/10 transition-colors",
                         pathname === link.href
                           ? "text-caramel"
                           : "text-cream hover:text-caramel"

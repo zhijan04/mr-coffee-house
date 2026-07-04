@@ -94,7 +94,7 @@ export default function GaleriaPage() {
               </span>
               <span className="h-px w-8 bg-caramel" />
             </div>
-            <h1 className="font-playfair text-5xl md:text-6xl font-800 text-cream mb-4">
+            <h1 className="font-poppins text-5xl md:text-6xl font-900 text-cream mb-4">
               Momentos que inspiran
             </h1>
             <p className="font-inter text-base text-cream/55 max-w-lg mx-auto">

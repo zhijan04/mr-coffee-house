@@ -8,7 +8,7 @@ import { generateLocalBusinessSchema } from "@/lib/schema";
 import "./globals.css";
 
 // Fonts are loaded via CSS @import in globals.css for local dev compatibility
-const playfair = { variable: "--font-playfair" };
+const playfair = { variable: "--font-poppins" };
 const inter = { variable: "--font-inter" };
 
 export const metadata: Metadata = generateMetadata();

@@ -75,7 +75,7 @@ export default function InstagramFeed() {
             </span>
             <span className="h-px w-8 bg-caramel" />
           </div>
-          <h2 className="font-playfair text-4xl md:text-5xl font-800 text-espresso dark:text-cream mb-4">
+          <h2 className="font-poppins text-4xl md:text-5xl font-900 text-espresso dark:text-cream mb-4">
             @mrcoffee.house
           </h2>
           <p className="font-inter text-base text-espresso/55 dark:text-cream/50 max-w-md mx-auto">

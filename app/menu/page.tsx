@@ -100,7 +100,7 @@ function MenuCard({ item, index }: { item: MenuItem; index: number }) {
       className="group relative p-6 rounded-2xl bg-cream dark:bg-mocha/40 border border-espresso/8 dark:border-cream/8 hover:border-caramel/30 transition-all duration-300 hover:shadow-xl hover:shadow-caramel/5 hover:-translate-y-0.5"
     >
       <div className="flex items-start justify-between gap-3 mb-3">
-        <h3 className="font-playfair text-lg font-600 text-espresso dark:text-cream group-hover:text-caramel transition-colors duration-300 leading-snug">
+        <h3 className="font-poppins text-lg font-700 text-espresso dark:text-cream group-hover:text-caramel transition-colors duration-300 leading-snug">
           {item.name}
         </h3>
         <span className="font-inter text-base font-700 text-caramel whitespace-nowrap">
@@ -176,7 +176,7 @@ export default function MenuPage() {
               </span>
               <span className="h-px w-8 bg-caramel" />
             </div>
-            <h1 className="font-playfair text-5xl md:text-6xl font-800 text-cream mb-4">
+            <h1 className="font-poppins text-5xl md:text-6xl font-900 text-cream mb-4">
               Todo lo que ofrecemos
             </h1>
             <p className="font-inter text-base text-cream/55 max-w-xl mx-auto">
@@ -234,7 +234,7 @@ export default function MenuPage() {
                         <Icon className="w-5 h-5 text-charcoal" strokeWidth={1.5} />
                       </div>
                       <div>
-                        <h2 className="font-playfair text-2xl md:text-3xl font-700 text-espresso dark:text-cream">
+                        <h2 className="font-poppins text-2xl md:text-3xl font-800 text-espresso dark:text-cream">
                           {group.label}
                         </h2>
                         <p className="font-inter text-sm text-espresso/45 dark:text-cream/40">

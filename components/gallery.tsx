@@ -129,7 +129,7 @@ export default function Gallery() {
                 Galería
               </span>
             </div>
-            <h2 className="font-playfair text-4xl md:text-5xl font-800 text-espresso dark:text-cream">
+            <h2 className="font-poppins text-4xl md:text-5xl font-900 text-espresso dark:text-cream">
               Momentos que inspiran
             </h2>
           </div>

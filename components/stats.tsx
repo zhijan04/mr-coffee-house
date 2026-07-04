@@ -82,7 +82,7 @@ export default function Stats() {
                   <Icon className="w-5 h-5 text-caramel" strokeWidth={1.5} />
                 </div>
 
-                <div className="font-playfair text-4xl md:text-5xl font-800 text-cream mb-2 leading-none">
+                <div className="font-poppins text-4xl md:text-5xl font-900 text-cream mb-2 leading-none">
                   {isInView ? (
                     <CountUp
                       start={0}

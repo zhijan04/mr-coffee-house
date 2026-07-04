@@ -57,7 +57,7 @@ export default function Story() {
               transition={{ delay: 0.4, duration: 0.7 }}
               className="absolute -bottom-6 -right-6 md:bottom-8 md:right-8 glass-dark rounded-2xl px-6 py-5 max-w-[220px]"
             >
-              <p className="font-playfair text-cream text-2xl font-700 leading-none mb-1">
+              <p className="font-poppins text-cream text-2xl font-800 leading-none mb-1">
                 +3 años
               </p>
               <p className="font-inter text-cream/60 text-sm leading-snug">
@@ -83,7 +83,7 @@ export default function Story() {
                   Quiénes somos
                 </span>
               </div>
-              <h2 className="font-playfair text-4xl md:text-5xl font-800 text-espresso dark:text-cream leading-tight">
+              <h2 className="font-poppins text-4xl md:text-5xl font-900 text-espresso dark:text-cream leading-tight">
                 Una historia que
                 <br />
                 <span className="text-caramel italic">se siente en cada</span>
@@ -129,7 +129,7 @@ export default function Story() {
                   />
                 </div>
                 <div>
-                  <p className="font-playfair text-base font-600 text-espresso dark:text-cream">
+                  <p className="font-poppins text-base font-700 text-espresso dark:text-cream">
                     Equipo Mr. Coffee House
                   </p>
                   <p className="font-inter text-xs text-espresso/50 dark:text-cream/40">

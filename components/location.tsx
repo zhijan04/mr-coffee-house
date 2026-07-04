@@ -65,7 +65,7 @@ export default function Location() {
             </span>
             <span className="h-px w-8 bg-caramel" />
           </div>
-          <h2 className="font-playfair text-4xl md:text-5xl font-800 text-espresso dark:text-cream mb-3">
+          <h2 className="font-poppins text-4xl md:text-5xl font-900 text-espresso dark:text-cream mb-3">
             Dos espacios, una experiencia
           </h2>
           <p className="font-inter text-base text-espresso/55 dark:text-cream/50 max-w-xl mx-auto">
@@ -106,7 +106,7 @@ export default function Location() {
                 {/* Content */}
                 <div className="p-7 flex flex-col gap-5 flex-1">
                   <div>
-                    <h3 className="font-playfair text-2xl font-700 text-espresso dark:text-cream mb-1 group-hover:text-caramel transition-colors duration-300">
+                    <h3 className="font-poppins text-2xl font-800 text-espresso dark:text-cream mb-1 group-hover:text-caramel transition-colors duration-300">
                       {suc.nombre}
                     </h3>
                     <p className="font-inter text-sm text-espresso/55 dark:text-cream/50 leading-relaxed">

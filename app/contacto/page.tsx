@@ -46,7 +46,7 @@ export default function ContactoPage() {
               </span>
               <span className="h-px w-8 bg-caramel" />
             </div>
-            <h1 className="font-playfair text-5xl md:text-6xl font-800 text-cream mb-4">
+            <h1 className="font-poppins text-5xl md:text-6xl font-900 text-cream mb-4">
               Hablemos
             </h1>
             <p className="font-inter text-base text-cream/55 max-w-md mx-auto">
@@ -68,7 +68,7 @@ export default function ContactoPage() {
               className="flex flex-col gap-8"
             >
               <div>
-                <h2 className="font-playfair text-3xl font-700 text-espresso dark:text-cream mb-2">
+                <h2 className="font-poppins text-3xl font-800 text-espresso dark:text-cream mb-2">
                   Información
                 </h2>
                 <p className="font-inter text-sm text-espresso/55 dark:text-cream/45">
@@ -132,7 +132,7 @@ export default function ContactoPage() {
               transition={{ duration: 0.7, delay: 0.15 }}
             >
               <div className="p-8 rounded-3xl bg-cream dark:bg-espresso/30 border border-espresso/8 dark:border-cream/8">
-                <h2 className="font-playfair text-2xl font-700 text-espresso dark:text-cream mb-6">
+                <h2 className="font-poppins text-2xl font-800 text-espresso dark:text-cream mb-6">
                   Envianos un mensaje
                 </h2>
                 {sent ? (
@@ -140,7 +140,7 @@ export default function ContactoPage() {
                     <div className="w-16 h-16 caramel-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                       <Send className="w-7 h-7 text-charcoal" strokeWidth={1.5} />
                     </div>
-                    <p className="font-playfair text-xl font-600 text-espresso dark:text-cream mb-2">¡Mensaje enviado!</p>
+                    <p className="font-poppins text-xl font-700 text-espresso dark:text-cream mb-2">¡Mensaje enviado!</p>
                     <p className="font-inter text-sm text-espresso/55 dark:text-cream/45">
                       Te redirigimos a WhatsApp. Te respondemos a la brevedad.
                     </p>

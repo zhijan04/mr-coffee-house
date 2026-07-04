@@ -98,7 +98,7 @@ export default function MenuSection() {
                 Menú
               </span>
             </div>
-            <h2 className="font-playfair text-4xl md:text-5xl font-800 text-cream leading-tight">
+            <h2 className="font-poppins text-4xl md:text-5xl font-900 text-cream leading-tight">
               Lo más pedido
             </h2>
             <p className="font-inter text-base text-cream/50 mt-3 max-w-md">
@@ -131,7 +131,7 @@ export default function MenuSection() {
               <span className="block font-inter text-xs font-500 text-caramel/70 tracking-wider uppercase mb-3">
                 {item.category}
               </span>
-              <h3 className="font-playfair text-lg font-600 text-cream mb-2 group-hover:text-caramel transition-colors duration-300">
+              <h3 className="font-poppins text-lg font-700 text-cream mb-2 group-hover:text-caramel transition-colors duration-300">
                 {item.name}
               </h3>
               <p className="font-inter text-sm text-cream/45 leading-relaxed">

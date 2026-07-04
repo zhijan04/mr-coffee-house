@@ -112,7 +112,7 @@ export default function Testimonials() {
             </span>
             <span className="h-px w-8 bg-caramel" />
           </div>
-          <h2 className="font-playfair text-4xl md:text-5xl font-800 text-espresso dark:text-cream mb-4">
+          <h2 className="font-poppins text-4xl md:text-5xl font-900 text-espresso dark:text-cream mb-4">
             Clientes que nos eligen
           </h2>
           <div className="flex items-center justify-center gap-2 mt-3">
