@@ -10,7 +10,8 @@ const stats = [
   {
     icon: Star,
     value: 2500,
-    suffix: "+",
+    prefix: "+",
+    suffix: "",
     label: "Reseñas verificadas",
     description: "En Google y plataformas digitales",
     color: "text-caramel",
@@ -18,6 +19,7 @@ const stats = [
   {
     icon: Star,
     value: 4.7,
+    prefix: "",
     suffix: "★",
     label: "Calificación promedio",
     description: "La más alta de Villa Carlos Paz",
@@ -27,7 +29,8 @@ const stats = [
   {
     icon: Users,
     value: 15,
-    suffix: "K+",
+    prefix: "+",
+    suffix: "K",
     label: "Clientes satisfechos",
     description: "Comunidad que nos elige a diario",
     color: "text-caramel",
@@ -35,6 +38,7 @@ const stats = [
   {
     icon: Award,
     value: 3,
+    prefix: "+",
     suffix: " años",
     label: "De especialidad",
     description: "Reconocidos en toda Córdoba",
@@ -90,10 +94,11 @@ export default function Stats() {
                       duration={2.5}
                       delay={index * 0.1}
                       decimals={stat.decimals || 0}
+                      prefix={stat.prefix}
                       suffix={stat.suffix}
                     />
                   ) : (
-                    <span>0{stat.suffix}</span>
+                    <span>{stat.prefix}0{stat.suffix}</span>
                   )}
                 </div>
 

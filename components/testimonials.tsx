@@ -129,7 +129,7 @@ export default function Testimonials() {
               4.7
             </span>
             <span className="font-inter text-sm text-espresso/50 dark:text-cream/40">
-              (2500+ reseñas)
+              (+2.500 reseñas)
             </span>
           </div>
         </motion.div>
