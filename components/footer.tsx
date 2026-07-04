@@ -29,21 +29,18 @@ export default function Footer() {
           {/* Brand column */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="inline-block mb-4" aria-label="Mr. Coffee House">
-              <div className="flex flex-col leading-none">
-                <span className="font-playfair text-2xl font-700 text-cream">
-                  Mr. Coffee
-                </span>
-                <span className="text-xs font-inter font-400 text-cream/50 tracking-[0.3em] uppercase mt-0.5">
-                  House
-                </span>
-              </div>
+              <img
+                src="/images/logo.png"
+                alt="Mr. Coffee - Cafetería de Especialidad"
+                className="h-10 w-auto rounded-lg"
+              />
             </Link>
             <p className="font-inter text-sm text-cream/55 leading-relaxed max-w-xs mb-6">
               Más que una cafetería. Un espacio diseñado para disfrutar café de especialidad, brunch artesanal y momentos memorables en Villa Carlos Paz.
             </p>
             <div className="flex items-center gap-3">
               <a
-                href="https://www.instagram.com/mrcoffeevcp"
+                href="https://www.instagram.com/mrcoffee.house"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full border border-cream/15 flex items-center justify-center hover:border-caramel hover:text-caramel transition-colors duration-300"

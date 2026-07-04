@@ -76,7 +76,7 @@ export default function InstagramFeed() {
             <span className="h-px w-8 bg-caramel" />
           </div>
           <h2 className="font-playfair text-4xl md:text-5xl font-800 text-espresso dark:text-cream mb-4">
-            @mrcoffeevcp
+            @mrcoffee.house
           </h2>
           <p className="font-inter text-base text-espresso/55 dark:text-cream/50 max-w-md mx-auto">
             Seguinos para ver las novedades, especiales del día y los momentos más lindos de nuestro café.
@@ -88,7 +88,7 @@ export default function InstagramFeed() {
           {posts.map((post, i) => (
             <motion.a
               key={post.id}
-              href="https://www.instagram.com/mrcoffeevcp"
+              href="https://www.instagram.com/mrcoffee.house"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.95 }}
@@ -131,7 +131,7 @@ export default function InstagramFeed() {
           className="flex justify-center"
         >
           <a
-            href="https://www.instagram.com/mrcoffeevcp"
+            href="https://www.instagram.com/mrcoffee.house"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 px-8 py-4 espresso-gradient text-cream font-inter font-600 text-base rounded-full hover:opacity-90 hover:scale-105 transition-all duration-300 shadow-xl border border-caramel/20"

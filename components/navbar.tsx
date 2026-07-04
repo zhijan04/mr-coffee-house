@@ -65,14 +65,11 @@ export default function Navbar() {
             className="flex items-center gap-2 group"
             aria-label="Mr. Coffee House - Inicio"
           >
-            <div className="flex flex-col leading-none">
-              <span className="font-playfair text-xl md:text-2xl font-700 tracking-tight text-cream group-hover:text-caramel transition-colors duration-300">
-                Mr. Coffee
-              </span>
-              <span className="text-[10px] md:text-xs font-inter font-400 text-cream/60 tracking-[0.3em] uppercase">
-                House
-              </span>
-            </div>
+            <img
+              src="/images/logo.png"
+              alt="Mr. Coffee - Cafetería de Especialidad"
+              className="h-9 md:h-10 w-auto rounded-lg group-hover:scale-105 transition-transform duration-300"
+            />
           </Link>
 
           {/* Desktop links */}

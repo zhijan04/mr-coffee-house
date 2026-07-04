@@ -11,8 +11,8 @@
 
 @layer base {
   :root {
-    --background: 38 30% 95%;
-    --foreground: 20 28% 18%;
+    --background: 60 25% 94%;
+    --foreground: 70 40% 14%;
 
     --card: 40 33% 97%;
     --card-foreground: 20 28% 18%;
@@ -20,7 +20,7 @@
     --popover: 40 33% 97%;
     --popover-foreground: 20 28% 18%;
 
-    --primary: 25 35% 25%;
+    --primary: 70 47% 22%;
     --primary-foreground: 40 33% 97%;
 
     --secondary: 30 30% 35%;
@@ -42,19 +42,19 @@
     --radius: 0.75rem;
 
     /* Brand tokens */
-    --espresso: #241A14;
-    --coffee: #4A3423;
+    --espresso: #333A15;
+    --coffee: #4A531E;
     --caramel: #C98B4A;
-    --cream: #F5EFE6;
+    --cream: #F3EFE1;
     --white: #FFFFFF;
-    --charcoal: #161210;
+    --charcoal: #1C2009;
   }
 
   .dark {
-    --background: 20 28% 10%;
-    --foreground: 40 20% 95%;
+    --background: 72 45% 8%;
+    --foreground: 55 30% 93%;
 
-    --card: 20 28% 13%;
+    --card: 72 40% 11%;
     --card-foreground: 40 20% 95%;
 
     --popover: 20 28% 13%;
@@ -103,7 +103,7 @@
 
   ::selection {
     background-color: #C98B4A;
-    color: #F5EFE6;
+    color: #F3EFE1;
   }
 }
 
@@ -113,21 +113,21 @@
   }
 
   .glass {
-    background: rgba(245, 239, 230, 0.08);
+    background: rgba(243, 239, 225, 0.08);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(245, 239, 230, 0.12);
+    border: 1px solid rgba(243, 239, 225, 0.12);
   }
 
   .glass-dark {
-    background: rgba(22, 18, 16, 0.75);
+    background: rgba(28, 32, 9, 0.78);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #C98B4A 0%, #F5EFE6 50%, #C98B4A 100%);
+    background: linear-gradient(135deg, #C98B4A 0%, #F3EFE1 50%, #C98B4A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -138,7 +138,7 @@
   }
 
   .espresso-gradient {
-    background: linear-gradient(160deg, #241A14 0%, #4A3423 100%);
+    background: linear-gradient(160deg, #2A3011 0%, #4A531E 100%);
   }
 
   .section-padding {

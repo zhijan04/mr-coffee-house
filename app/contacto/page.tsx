@@ -106,7 +106,7 @@ export default function ContactoPage() {
                 <p className="font-inter text-xs text-espresso/40 dark:text-cream/35 uppercase tracking-wider mb-3">Redes sociales</p>
                 <div className="flex gap-3">
                   {[
-                    { icon: Instagram, href: "https://www.instagram.com/mrcoffeevcp", label: "Instagram" },
+                    { icon: Instagram, href: "https://www.instagram.com/mrcoffee.house", label: "Instagram" },
                     { icon: Facebook, href: "https://www.facebook.com/mrcoffeehouse", label: "Facebook" },
                     { icon: MessageCircle, href: getWhatsAppUrl(), label: "WhatsApp" },
                   ].map(({ icon: Icon, href, label }) => (
