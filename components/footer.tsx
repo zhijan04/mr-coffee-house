@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Instagram, Facebook, MapPin, Clock, MessageCircle } from "lucide-react";
-import { getWhatsAppUrl, MAPS_URL } from "@/lib/utils";
+import { getWhatsAppUrl } from "@/lib/utils";
 
 const navLinks = [
   { href: "/", label: "Inicio" },
@@ -118,16 +118,31 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li>
                 <a
-                  href={MAPS_URL}
+                  href="https://www.google.com/maps/search/Mr+Coffee+Las+Heras+485+Villa+Carlos+Paz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-start gap-3 group"
                 >
                   <MapPin className="w-4 h-4 text-caramel mt-0.5 flex-shrink-0" strokeWidth={1.5} />
                   <span className="font-inter text-sm text-cream/65 group-hover:text-cream transition-colors">
-                    Las Heras 485
+                    <strong className="text-cream/85">Mr. Coffee</strong>
                     <br />
-                    Villa Carlos Paz, Córdoba
+                    Las Heras 485
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/maps/search/Mr+Coffee+Brunch+House+San+Martin+Moreno+Villa+Carlos+Paz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 group"
+                >
+                  <MapPin className="w-4 h-4 text-caramel mt-0.5 flex-shrink-0" strokeWidth={1.5} />
+                  <span className="font-inter text-sm text-cream/65 group-hover:text-cream transition-colors">
+                    <strong className="text-cream/85">Brunch House</strong>
+                    <br />
+                    Av. San Martín esq. Moreno (Ópera Fun)
                   </span>
                 </a>
               </li>

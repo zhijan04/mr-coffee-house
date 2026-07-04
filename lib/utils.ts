@@ -10,7 +10,7 @@ export const WHATSAPP_DEFAULT_MESSAGE =
   "Hola, quiero conocer más sobre Mr. Coffee House.";
 export const INSTAGRAM_HANDLE = "mrcoffee.house";
 export const MAPS_URL =
-  "https://www.google.com/maps/search/Las+Heras+485+Villa+Carlos+Paz+Cordoba";
+  "https://www.google.com/maps/search/Mr+Coffee+Villa+Carlos+Paz";
 
 export function getWhatsAppUrl(message?: string) {
   const msg = encodeURIComponent(message || WHATSAPP_DEFAULT_MESSAGE);

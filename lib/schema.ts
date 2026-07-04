@@ -20,6 +20,30 @@ export function generateLocalBusinessSchema() {
       postalCode: "5152",
       addressCountry: "AR",
     },
+    department: [
+      {
+        "@type": "CafeOrCoffeeShop",
+        name: "Mr. Coffee - Las Heras",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Las Heras 485",
+          addressLocality: "Villa Carlos Paz",
+          addressRegion: "Córdoba",
+          addressCountry: "AR",
+        },
+      },
+      {
+        "@type": "CafeOrCoffeeShop",
+        name: "Mr. Coffee Brunch House",
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: "Av. San Martín esq. Moreno, Complejo Ópera Fun",
+          addressLocality: "Villa Carlos Paz",
+          addressRegion: "Córdoba",
+          addressCountry: "AR",
+        },
+      },
+    ],
     geo: {
       "@type": "GeoCoordinates",
       latitude: -31.4168,

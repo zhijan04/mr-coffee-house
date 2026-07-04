@@ -19,24 +19,24 @@ const config: Config = {
     extend: {
       colors: {
         espresso: {
-          DEFAULT: "#3B2A22",
-          foreground: "#F8F4EE",
+          DEFAULT: "#241A14",
+          foreground: "#F5EFE6",
         },
         coffee: {
-          DEFAULT: "#5A3E2B",
-          foreground: "#F8F4EE",
+          DEFAULT: "#4A3423",
+          foreground: "#F5EFE6",
         },
         caramel: {
           DEFAULT: "#C98B4A",
-          foreground: "#1D1D1D",
+          foreground: "#161210",
         },
         cream: {
-          DEFAULT: "#F8F4EE",
-          foreground: "#3B2A22",
+          DEFAULT: "#F5EFE6",
+          foreground: "#241A14",
         },
         charcoal: {
-          DEFAULT: "#1D1D1D",
-          foreground: "#F8F4EE",
+          DEFAULT: "#161210",
+          foreground: "#F5EFE6",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

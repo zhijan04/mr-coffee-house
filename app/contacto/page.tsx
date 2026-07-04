@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { MapPin, Clock, MessageCircle, Instagram, Facebook, Send } from "lucide-react";
-import { getWhatsAppUrl, MAPS_URL } from "@/lib/utils";
+import { getWhatsAppUrl } from "@/lib/utils";
 
 export default function ContactoPage() {
   const [form, setForm] = useState({ nombre: "", email: "", mensaje: "" });
@@ -78,7 +78,8 @@ export default function ContactoPage() {
 
               <div className="flex flex-col gap-4">
                 {[
-                  { icon: MapPin, label: "Dirección", value: "Las Heras 485\nVilla Carlos Paz, Córdoba", href: MAPS_URL },
+                  { icon: MapPin, label: "Mr. Coffee — Original", value: "Las Heras 485\nVilla Carlos Paz, Córdoba", href: "https://www.google.com/maps/search/Mr+Coffee+Las+Heras+485+Villa+Carlos+Paz" },
+                  { icon: MapPin, label: "Mr. Coffee Brunch House", value: "Av. San Martín esq. Moreno (Ópera Fun)\nVilla Carlos Paz, Córdoba", href: "https://www.google.com/maps/search/Mr+Coffee+Brunch+House+San+Martin+Moreno+Villa+Carlos+Paz" },
                   { icon: Clock, label: "Horario", value: "08:00 a 21:00\nTodos los días", href: null },
                   { icon: MessageCircle, label: "WhatsApp", value: "+54 9 3541 000000\nReservas y consultas", href: getWhatsAppUrl() },
                 ].map(({ icon: Icon, label, value, href }) => {

@@ -11,7 +11,7 @@
 
 @layer base {
   :root {
-    --background: 40 33% 97%;
+    --background: 38 30% 95%;
     --foreground: 20 28% 18%;
 
     --card: 40 33% 97%;
@@ -42,12 +42,12 @@
     --radius: 0.75rem;
 
     /* Brand tokens */
-    --espresso: #3B2A22;
-    --coffee: #5A3E2B;
+    --espresso: #241A14;
+    --coffee: #4A3423;
     --caramel: #C98B4A;
-    --cream: #F8F4EE;
+    --cream: #F5EFE6;
     --white: #FFFFFF;
-    --charcoal: #1D1D1D;
+    --charcoal: #161210;
   }
 
   .dark {
@@ -103,7 +103,7 @@
 
   ::selection {
     background-color: #C98B4A;
-    color: #F8F4EE;
+    color: #F5EFE6;
   }
 }
 
@@ -113,21 +113,21 @@
   }
 
   .glass {
-    background: rgba(248, 244, 238, 0.08);
+    background: rgba(245, 239, 230, 0.08);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
-    border: 1px solid rgba(248, 244, 238, 0.12);
+    border: 1px solid rgba(245, 239, 230, 0.12);
   }
 
   .glass-dark {
-    background: rgba(29, 29, 29, 0.7);
+    background: rgba(22, 18, 16, 0.75);
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .text-gradient {
-    background: linear-gradient(135deg, #C98B4A 0%, #F8F4EE 50%, #C98B4A 100%);
+    background: linear-gradient(135deg, #C98B4A 0%, #F5EFE6 50%, #C98B4A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -138,7 +138,7 @@
   }
 
   .espresso-gradient {
-    background: linear-gradient(160deg, #3B2A22 0%, #5A3E2B 100%);
+    background: linear-gradient(160deg, #241A14 0%, #4A3423 100%);
   }
 
   .section-padding {

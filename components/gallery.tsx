@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import Image from "next/image";
+import SmartImage from "@/components/smart-image";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
@@ -187,7 +187,7 @@ export default function Gallery() {
                 >
                   <PhotoView src={img.src}>
                     <div className="relative w-full h-full">
-                      <Image
+                      <SmartImage
                         src={img.src}
                         alt={img.alt}
                         fill

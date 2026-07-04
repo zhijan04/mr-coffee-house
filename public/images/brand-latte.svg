@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A1E17"/>
+      <stop offset="100%" style="stop-color:#4A3423"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg2)"/>
+  <circle cx="400" cy="400" r="230" fill="#3B2A22" stroke="#C98B4A" stroke-width="5"/>
+  <circle cx="400" cy="400" r="195" fill="#5A3E2B"/>
+  <path d="M400,250 Q340,330 400,400 Q460,470 400,550 M400,250 Q460,330 400,400 Q340,470 400,550" fill="none" stroke="#F5EFE6" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
+  <path d="M350,300 Q400,340 450,300 M330,360 Q400,410 470,360 M340,430 Q400,475 460,430" fill="none" stroke="#F5EFE6" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
+  <text x="400" y="720" font-family="Georgia,serif" font-size="30" font-style="italic" fill="#C98B4A" text-anchor="middle">Latte Art</text>
+</svg>

@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
+import SmartImage from "@/components/smart-image";
 
 const paragraphs = [
   {
@@ -40,7 +40,7 @@ export default function Story() {
             className="relative"
           >
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-              <Image
+              <SmartImage
                 src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1478"
                 alt="Interior de Mr. Coffee House - cafetería de especialidad en Villa Carlos Paz"
                 fill
@@ -121,7 +121,7 @@ export default function Story() {
             >
               <div className="flex items-center gap-4 pt-4 border-t border-espresso/10 dark:border-cream/10">
                 <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-caramel/30 relative">
-                  <Image
+                  <SmartImage
                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100"
                     alt="Fundador Mr. Coffee House"
                     fill

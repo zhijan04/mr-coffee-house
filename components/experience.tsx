@@ -3,7 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Coffee, Utensils, Cake, Heart } from "lucide-react";
-import Image from "next/image";
+import SmartImage from "@/components/smart-image";
 
 const experiences = [
   {
@@ -12,6 +12,7 @@ const experiences = [
     description:
       "Granos seleccionados de los mejores orígenes del mundo, tostados artesanalmente y extraídos con precisión. Cada método de preparación, desde el espresso hasta el cold brew, está diseñado para revelar los perfiles de sabor únicos de cada café.",
     image: "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800",
+    fallbackImage: "/images/brand-beans.svg",
     tag: "Specialty Coffee",
     accent: "#C98B4A",
   },
@@ -21,6 +22,7 @@ const experiences = [
     description:
       "Ingredientes frescos, recetas propias y elaboración diaria. Nuestro brunch nació de la idea de que el desayuno merece ser el mejor momento del día. Tostadas francesas, waffles, bagels en masa madre y omelettes que cuentan con toques de autor.",
     image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=800",
+    fallbackImage: "/images/brand-brunch.svg",
     tag: "Farm to Table",
     accent: "#C98B4A",
   },
@@ -30,6 +32,7 @@ const experiences = [
     description:
       "Producción artesanal que empieza antes del amanecer. Cookies, brownies, cheesecakes, lemon pie, croissants y alfajores pensados para acompañar tu café o para llevarte una porción de Mr. Coffee a casa.",
     image: "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=800",
+    fallbackImage: "/images/brand-pastry.svg",
     tag: "Hecho en Casa",
     accent: "#C98B4A",
   },
@@ -39,6 +42,7 @@ const experiences = [
     description:
       "Un espacio pensado para que pases el tiempo que quieras. Wi-Fi, música curada, rincones para trabajar y una atmósfera que invita a quedarse. Porque creemos que un buen café merece un buen lugar para disfrutarlo.",
     image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800",
+    fallbackImage: "/images/brand-ambience.svg",
     tag: "Espacio & Conexión",
     accent: "#C98B4A",
   },
@@ -95,8 +99,9 @@ export default function Experience() {
               >
                 {/* Image */}
                 <div className="relative h-56 overflow-hidden">
-                  <Image
+                  <SmartImage
                     src={exp.image}
+                    fallback={exp.fallbackImage}
                     alt={exp.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"

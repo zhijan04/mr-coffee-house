@@ -2,7 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
+import SmartImage from "@/components/smart-image";
 import Link from "next/link";
 import { MapPin, MessageCircle, ChevronDown } from "lucide-react";
 import { getWhatsAppUrl, MAPS_URL } from "@/lib/utils";
@@ -43,7 +43,7 @@ export default function Hero() {
     >
       {/* Parallax background image */}
       <motion.div className="absolute inset-0 scale-110" style={{ y }}>
-        <Image
+        <SmartImage
           src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?q=80&w=2070"
           alt="Barista realizando latte art en Mr. Coffee House, Villa Carlos Paz"
           fill
@@ -81,7 +81,7 @@ export default function Hero() {
           <motion.div variants={itemVariants} className="flex items-center gap-3 mb-6">
             <span className="h-px w-10 bg-caramel" />
             <span className="font-inter text-xs font-500 text-caramel tracking-[0.25em] uppercase">
-              Villa Carlos Paz · Córdoba
+              Villa Carlos Paz · 2 Sucursales
             </span>
           </motion.div>
 

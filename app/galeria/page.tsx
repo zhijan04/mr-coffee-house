@@ -2,7 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, useInView, AnimatePresence } from "framer-motion";
-import Image from "next/image";
+import SmartImage from "@/components/smart-image";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import { ZoomIn } from "lucide-react";
@@ -168,7 +168,7 @@ export default function GaleriaPage() {
                   >
                     <PhotoView src={img.src}>
                       <div className="relative w-full h-full">
-                        <Image
+                        <SmartImage
                           src={img.src}
                           alt={img.alt}
                           fill

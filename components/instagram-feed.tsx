@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import Image from "next/image";
+import SmartImage from "@/components/smart-image";
 import { Instagram, Heart, MessageCircle } from "lucide-react";
 
 const posts = [
@@ -97,7 +97,7 @@ export default function InstagramFeed() {
               className="relative aspect-square overflow-hidden rounded-2xl group cursor-pointer block"
               aria-label={post.alt}
             >
-              <Image
+              <SmartImage
                 src={post.src}
                 alt={post.alt}
                 fill
