@@ -7,7 +7,7 @@ import SmartImage from "@/components/smart-image";
 const paragraphs = [
   {
     eyebrow: "Nuestros orígenes",
-    text: "Mr. Coffee House nació de una obsesión: encontrar el café perfecto. No el café de cualquier lugar, sino uno con historia, con terroir, con el trabajo de productores que aman lo que hacen. Esa búsqueda nos llevó a recorrer orígenes, conocer baristas y construir algo diferente en el corazón de Villa Carlos Paz.",
+    text: "Mr. Coffee House nació de una obsesión: encontrar el café perfecto. No el café de cualquier lugar, sino uno con historia, con identidad de origen, con el trabajo de productores que aman lo que hacen. Esa búsqueda nos llevó a recorrer orígenes, conocer baristas y construir algo diferente en el corazón de Villa Carlos Paz.",
   },
   {
     eyebrow: "Cultura de especialidad",
@@ -86,7 +86,7 @@ export default function Story() {
               <h2 className="font-poppins text-4xl md:text-5xl font-900 text-espresso dark:text-cream leading-tight">
                 Una historia que
                 <br />
-                <span className="text-caramel italic">se siente en cada</span>
+                <span className="text-caramel">se siente en cada</span>
                 <br />
                 taza
               </h2>

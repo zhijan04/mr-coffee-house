@@ -18,5 +18,5 @@
     <circle cx="550" cy="280" r="34"/>
   </g>
   <path d="M180,560 L620,560 M220,560 L220,640 M580,560 L580,640" stroke="#C98B4A" stroke-width="6" stroke-linecap="round" fill="none" opacity="0.7"/>
-  <text x="400" y="720" font-family="Georgia,serif" font-size="30" font-style="italic" fill="#C98B4A" text-anchor="middle">Nuestro Espacio</text>
+  <text x="400" y="720" font-family="Georgia,serif" font-size="30" fill="#C98B4A" text-anchor="middle">Nuestro Espacio</text>
 </svg>

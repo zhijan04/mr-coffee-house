@@ -10,5 +10,5 @@
   <circle cx="400" cy="400" r="195" fill="#4A3423"/>
   <path d="M400,250 Q340,330 400,400 Q460,470 400,550 M400,250 Q460,330 400,400 Q340,470 400,550" fill="none" stroke="#F3EFE1" stroke-width="10" stroke-linecap="round" opacity="0.85"/>
   <path d="M350,300 Q400,340 450,300 M330,360 Q400,410 470,360 M340,430 Q400,475 460,430" fill="none" stroke="#F3EFE1" stroke-width="7" stroke-linecap="round" opacity="0.6"/>
-  <text x="400" y="720" font-family="Georgia,serif" font-size="30" font-style="italic" fill="#C98B4A" text-anchor="middle">Latte Art</text>
+  <text x="400" y="720" font-family="Georgia,serif" font-size="30" fill="#C98B4A" text-anchor="middle">Latte Art</text>
 </svg>

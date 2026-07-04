@@ -13,5 +13,5 @@
     <path d="M330,330 L330,300 Q330,285 345,285 L455,285 Q470,285 470,300 L470,330"/>
     <path d="M340,400 L460,400 M340,435 L430,435" opacity="0.7"/>
   </g>
-  <text x="400" y="720" font-family="Georgia,serif" font-size="30" font-style="italic" fill="#C98B4A" text-anchor="middle">Brunch Artesanal</text>
+  <text x="400" y="720" font-family="Georgia,serif" font-size="30" fill="#C98B4A" text-anchor="middle">Brunch Artesanal</text>
 </svg>

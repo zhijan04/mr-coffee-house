@@ -12,5 +12,5 @@
     <ellipse cx="490" cy="440" rx="70" ry="100" transform="rotate(20 490 440)"/>
     <path d="M462,365 Q500,440 458,520" transform="rotate(20 490 440)" stroke-linecap="round"/>
   </g>
-  <text x="400" y="720" font-family="Georgia,serif" font-size="30" font-style="italic" fill="#C98B4A" text-anchor="middle">Café de Origen</text>
+  <text x="400" y="720" font-family="Georgia,serif" font-size="30" fill="#C98B4A" text-anchor="middle">Café de Origen</text>
 </svg>
