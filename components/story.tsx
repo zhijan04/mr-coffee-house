@@ -58,7 +58,7 @@ export default function Story() {
               className="absolute -bottom-6 -right-6 md:bottom-8 md:right-8 glass-dark rounded-2xl px-6 py-5 max-w-[220px]"
             >
               <p className="font-playfair text-cream text-2xl font-700 leading-none mb-1">
-                +5 años
+                +3 años
               </p>
               <p className="font-inter text-cream/60 text-sm leading-snug">
                 siendo el café de referencia de Carlos Paz

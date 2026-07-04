@@ -34,7 +34,7 @@ const stats = [
   },
   {
     icon: Award,
-    value: 5,
+    value: 3,
     suffix: " años",
     label: "De especialidad",
     description: "Reconocidos en toda Córdoba",
